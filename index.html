@@ -17,26 +17,35 @@
   <nav class="site-nav">
     <a href="#apropos">À propos</a>
     <a href="#savoir-faire">Savoir-faire</a>
+    <a href="#pourquoi-moi">Pourquoi moi</a>
     <a href="#realisations">Réalisations</a>
     <a href="#contact" class="nav-cta">Me contacter</a>
   </nav>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
 <!-- ============================================= -->
 <!-- ACCUEIL                                        -->
 <!-- ============================================= -->
 <section class="hero" id="accueil">
-  <div class="hero-shapes" aria-hidden="true">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
     <span class="shape shape--tri"></span>
     <span class="shape shape--square"></span>
     <span class="shape shape--ring"></span>
+    <span class="shape shape--dots"></span>
   </div>
 
   <div class="hero-inner">
 
     <div class="hero-content">
       <p class="doc-tag">
-        <span>DOSSIER CLIENT</span><span class="doc-tag__sep">/</span><span>SITE VITRINE</span>
+        <span class="doc-tag__dot"></span>
+        Développeur front-end freelance
       </p>
 
       <h1 class="hero-title">
@@ -52,63 +61,50 @@
 
       <div class="hero-actions">
         <a href="#contact" class="btn btn--primary">
-          Discuter de mon projet
+          <span>Discuter de mon projet</span>
           <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
           </svg>
         </a>
-        <a href="#realisations" class="btn btn--ghost">Voir mes réalisations ↓</a>
+        <a href="#realisations" class="btn btn--ghost">
+          <span>Voir mes réalisations</span>
+        </a>
       </div>
-
-      <dl class="hero-specs">
-        <div class="hero-specs__item">
-          <dt>Délai moyen</dt>
-          <dd>3 semaines</dd>
-        </div>
-        <div class="hero-specs__item">
-          <dt>Fabrication</dt>
-          <dd>100 % sur-mesure</dd>
-        </div>
-        <div class="hero-specs__item">
-          <dt>Interlocuteur</dt>
-          <dd>Design + code, une seule personne</dd>
-        </div>
-      </dl>
     </div>
 
-    <div class="hero-diagram">
-      <div class="diagram-panel">
-        <p class="diagram-label">DEMANDES DE CONTACT — AVANT / APRÈS SITE</p>
-
-        <svg class="diagram-chart" viewBox="0 0 320 180" role="img" aria-label="Courbe montrant l'augmentation des demandes de contact après la mise en ligne d'un site sur-mesure">
-          <defs>
-            <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#5B8DEF"/>
-              <stop offset="100%" stop-color="#7C3AED"/>
-            </linearGradient>
-          </defs>
-          <g stroke="#E4E9FB" stroke-width="1">
-            <line x1="0" y1="30" x2="320" y2="30"/>
-            <line x1="0" y1="80" x2="320" y2="80"/>
-            <line x1="0" y1="130" x2="320" y2="130"/>
-          </g>
-          <polyline points="0,140 60,138 120,142 150,140" fill="none" stroke="#C7CEE8" stroke-width="2"/>
-          <polyline points="150,140 190,95 230,55 280,28 320,15" fill="none" stroke="url(#lineGradient)" stroke-width="2.5"/>
-          <circle cx="150" cy="140" r="3.5" fill="#8A90B3"/>
-          <circle cx="320" cy="15" r="4" fill="#7C3AED"/>
-          <line x1="150" y1="10" x2="150" y2="165" stroke="#C7CEE8" stroke-width="1" stroke-dasharray="3 4"/>
-          <text x="154" y="20" fill="#6B7089" font-family="IBM Plex Mono, monospace" font-size="9">MISE EN LIGNE</text>
-        </svg>
-
-        <div class="diagram-foot">
-          <span>AVANT</span>
-          <span class="diagram-foot__accent">APRÈS</span>
+    <div class="hero-visual">
+      <div class="browser-mock">
+        <div class="browser-bar">
+          <span class="dot dot--a"></span>
+          <span class="dot dot--b"></span>
+          <span class="dot dot--c"></span>
+          <div class="browser-url">votresite.fr</div>
+        </div>
+        <div class="browser-body">
+          <div class="mock-nav">
+            <span class="mock-nav__logo"></span>
+            <span class="mock-nav__item"></span>
+            <span class="mock-nav__item"></span>
+            <span class="mock-nav__cta"></span>
+          </div>
+          <div class="mock-hero">
+            <span class="mock-line mock-line--lg"></span>
+            <span class="mock-line mock-line--md"></span>
+            <span class="mock-btn"></span>
+          </div>
+          <div class="mock-grid">
+            <span class="mock-card"></span>
+            <span class="mock-card"></span>
+            <span class="mock-card"></span>
+          </div>
         </div>
       </div>
 
-      <div class="stamp">
-        <span>2 projets<br>par mois</span>
+      <div class="floating-badge floating-badge--online">
+        <span class="floating-badge__dot"></span>
+        Site en ligne
       </div>
+      <div class="floating-badge floating-badge--stars">★★★★★</div>
     </div>
 
   </div>
@@ -170,12 +166,47 @@
 </section>
 
 <!-- ============================================= -->
-<!-- MES RÉALISATIONS                               -->
+<!-- POURQUOI ME CHOISIR                            -->
 <!-- ============================================= -->
-<section class="section" id="realisations">
+<section class="section" id="pourquoi-moi">
   <div class="section-inner">
     <div class="section-head">
-      <p class="section-tag">03 / Réalisations</p>
+      <p class="section-tag">03 / Pourquoi moi</p>
+      <h2 class="section-title">Ce qui change quand c&rsquo;est moi qui m&rsquo;en occupe.</h2>
+    </div>
+
+    <div class="arguments-grid">
+      <div class="argument-card">
+        <span class="argument-mark" aria-hidden="true"></span>
+        <h3>Un seul interlocuteur, du début à la fin</h3>
+        <p>Pas d&rsquo;agence, pas d&rsquo;équipe qui change en cours de route : vous échangez directement avec la personne qui code votre site.</p>
+      </div>
+      <div class="argument-card">
+        <span class="argument-mark" aria-hidden="true"></span>
+        <h3>Du sur-mesure, pas un thème recyclé</h3>
+        <p>Chaque site est construit ligne par ligne pour votre activité — pas un modèle générique qu&rsquo;on retrouve partout.</p>
+      </div>
+      <div class="argument-card">
+        <span class="argument-mark" aria-hidden="true"></span>
+        <h3>Un code propre et rapide</h3>
+        <p>Pas de surcouche inutile : des sites légers qui s&rsquo;affichent vite, sur mobile comme sur ordinateur.</p>
+      </div>
+      <div class="argument-card">
+        <span class="argument-mark" aria-hidden="true"></span>
+        <h3>Une communication claire</h3>
+        <p>Vous savez toujours où en est votre projet, sans jargon technique inutile — juste des réponses concrètes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================= -->
+<!-- MES RÉALISATIONS                               -->
+<!-- ============================================= -->
+<section class="section section--tinted" id="realisations">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="section-tag">04 / Réalisations</p>
       <h2 class="section-title">Quelques projets récents.</h2>
     </div>
 
@@ -202,10 +233,10 @@
 <!-- ============================================= -->
 <!-- ME CONTACTER                                   -->
 <!-- ============================================= -->
-<section class="section section--tinted" id="contact">
+<section class="section" id="contact">
   <div class="section-inner section-inner--split">
     <div class="section-head">
-      <p class="section-tag">04 / Me contacter</p>
+      <p class="section-tag">05 / Me contacter</p>
       <h2 class="section-title">Un projet en tête ? Écrivez-moi.</h2>
       <p class="section-note">
         Réponse sous 24 à 48h. Vous pouvez aussi me suivre ou m&rsquo;écrire
@@ -228,7 +259,7 @@
         <textarea id="message" name="message" rows="5" required></textarea>
       </div>
       <button type="submit" class="btn btn--primary">
-        Envoyer le message
+        <span>Envoyer le message</span>
         <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
           <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/>
         </svg>
@@ -237,13 +268,41 @@
   </div>
 </section>
 
+<!-- ============================================= -->
+<!-- FOOTER                                         -->
+<!-- ============================================= -->
 <footer class="site-footer">
-  <span>© 2026 LimeDev</span>
-  <div class="footer-links">
-    <a href="https://instagram.com/votre_pseudo" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://github.com/limedev" target="_blank" rel="noopener">GitHub</a>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">LimeDev</span>
+      <p>Développeur front-end freelance — sites vitrines sur-mesure pour artisans et créateurs.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="#apropos">À propos</a>
+      <a href="#savoir-faire">Savoir-faire</a>
+      <a href="#pourquoi-moi">Pourquoi moi</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#contact">Me contacter</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Me suivre</h4>
+      <a href="https://instagram.com/votre_pseudo" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://github.com/limedev" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 LimeDev — Tous droits réservés</span>
+    <div class="footer-legal">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+    </div>
   </div>
 </footer>
 
+<script src="script.js" defer></script>
 </body>
 </html>
